@@ -60,7 +60,6 @@ exports.delete = function(req, res) {
   var listing = req.listing;
 
   /* Remove the article */
-  console.log(listing);
   Listing.remove(listing, function(err,list){
     if (err){
       throw err;
